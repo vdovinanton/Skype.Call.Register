@@ -1,0 +1,6 @@
+D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.exe.config
+D:\skype register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.csprojResolveAssemblyReference.cache
+D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.exe
+D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.pdb
+D:\skype register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.exe
+D:\skype register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.pdb
