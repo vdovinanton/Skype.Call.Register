@@ -54,7 +54,6 @@ namespace SkypeWatcher
                     }
                 }
             };
-
             Console.WriteLine($"\nCall info from '{user.LoginName}':" +
                               $"\n - Call begin: {user.CallHistory.First().Start}" +
                               $"\n - End call: {user.CallHistory.First().End}");

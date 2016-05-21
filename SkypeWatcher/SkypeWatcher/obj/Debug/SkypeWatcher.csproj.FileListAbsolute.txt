@@ -8,3 +8,7 @@ D:\skype register\SkypeWatcher\SkypeWatcher\obj\Debug\Interop.SKYPE4COMLib.dll
 D:\skype register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.csproj.ResolveComReference.cache
 D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.Entity.dll
 D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.Entity.pdb
+D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.dll
+D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.SqlServer.dll
+D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.xml
+D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.SqlServer.xml
