@@ -26,19 +26,23 @@ namespace SkypeWatcher
         {
             return Task.Factory.StartNew(() =>
             {
+                // If client not running, them start minimized with no splash screen
+                if (!_skype.Client.IsRunning)
+                    _skype.Client.Start(true, true);
+
                 try
                 {
                     _skype.CallStatus += OnCallRecived;
-                    _skype.Attach();
+                    _skype.Attach(5, false);
 
                     Console.WriteLine("Skype attached");
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine($"Error\n{e.Message}");
+                    Console.WriteLine($"Error:\n{e.Message}");
                     throw;
                 }
-            }, TaskCreationOptions.None);
+            }, TaskCreationOptions.LongRunning);
         }
 
         private void OnCallRecived(Call pcall, TCallStatus status)
@@ -61,7 +65,7 @@ namespace SkypeWatcher
             Console.WriteLine($"\nCall info from '{user.LoginName}':" +
                               $"\n - Call begin: {user.CallHistory.First().Start}" +
                               $"\n - End call: {user.CallHistory.First().End}");
- 
+            Console.WriteLine("I'm waiting for call... If your want to exit, press any key.");
             CallHandler(this, user);
         }
     }

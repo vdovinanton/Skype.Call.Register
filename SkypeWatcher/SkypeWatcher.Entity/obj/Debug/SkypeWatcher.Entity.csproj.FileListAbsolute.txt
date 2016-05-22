@@ -1,6 +1,5 @@
 D:\skype register\SkypeWatcher\SkypeWatcher.Entity\bin\Debug\SkypeWatcher.Entity.dll
 D:\skype register\SkypeWatcher\SkypeWatcher.Entity\bin\Debug\SkypeWatcher.Entity.pdb
-D:\skype register\SkypeWatcher\SkypeWatcher.Entity\obj\Debug\SkypeWatcher.Entity.csprojResolveAssemblyReference.cache
 D:\skype register\SkypeWatcher\SkypeWatcher.Entity\obj\Debug\SkypeWatcher.Entity.dll
 D:\skype register\SkypeWatcher\SkypeWatcher.Entity\obj\Debug\SkypeWatcher.Entity.pdb
 D:\skype register\SkypeWatcher\SkypeWatcher.Entity\bin\Debug\EntityFramework.dll

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SkypeWatcher.Entity.Interfaces;
-using SkypeWatcher.Entity.Models;
+﻿using SkypeWatcher.Entity.Interfaces;
 using SkypeWatcher.Entity.Repositories;
 
 namespace SkypeWatcher.Entity
