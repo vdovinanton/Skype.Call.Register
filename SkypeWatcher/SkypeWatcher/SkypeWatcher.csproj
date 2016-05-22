@@ -59,7 +59,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="regdll.bat" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="SKYPE4COMLib">

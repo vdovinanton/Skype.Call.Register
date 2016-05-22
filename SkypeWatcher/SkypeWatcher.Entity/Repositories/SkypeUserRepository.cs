@@ -15,5 +15,16 @@ namespace SkypeWatcher.Entity.Repositories
         public SkypeUserRepository(DbContext context) : base(context)
         {
         }
+
+        public void AddOrCreate(SkypeUser user)
+        {
+            var currentUser = UserContext.Users
+                .FirstOrDefault(u => u.LoginName == user.LoginName);
+
+            if (currentUser != null)
+                currentUser.CallHistory.Add(user.CallHistory.Last());
+            else
+                UserContext.Users.Add(user);
+        }
     }
 }

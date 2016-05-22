@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using SkypeWatcher.Entity;
 using SkypeWatcher.Entity.Models;
 
@@ -13,16 +14,18 @@ namespace SkypeWatcher
             //TODO: if db contain login name then write to istory new call info
 
             var skype = new SkypeWatcher();
+            //skype.CallHandler += CallHandler;
+            MockData();
+            //Console.ReadKey();
+        }
 
-            skype.CallHandler += (sender, user) =>
+        private static void CallHandler(object sender, SkypeUser skypeUser)
+        {
+            using (var unit = new UnitOfWork(new SkypeCallContext()))
             {
-                using (var unit = new UnitOfWork(new SkypeCallContext()))
-                {
-                    unit.UsersRepository.Add(user);
-                    unit.Complete();
-                }
-            };
-            Console.ReadKey();
+                unit.UsersRepository.AddOrCreate(skypeUser);
+                unit.Complete();
+            }
         }
 
         private static void MockData()
@@ -36,12 +39,13 @@ namespace SkypeWatcher
                     {
                         new CallHistory
                         {
-                            Start = DateTime.UtcNow,
-                            End = DateTime.UtcNow.AddMinutes(2)
+                            Start = DateTime.UtcNow.AddMinutes(new Random().Next(0, 30)),
+                            End = DateTime.UtcNow.AddMinutes(new Random().Next(30, 60))
                         }
                     }
                 };
-                unit.UsersRepository.Add(user);
+
+                unit.UsersRepository.AddOrCreate(user);
                 unit.Complete();
             }
         }
