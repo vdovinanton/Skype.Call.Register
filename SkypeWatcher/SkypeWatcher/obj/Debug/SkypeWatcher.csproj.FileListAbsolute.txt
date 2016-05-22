@@ -12,3 +12,17 @@ D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.dll
 D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.SqlServer.dll
 D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.xml
 D:\skype register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.SqlServer.xml
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.exe.config
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\obj\Debug\Interop.SKYPE4COMLib.dll
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.csproj.ResolveComReference.cache
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.exe
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.pdb
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.exe
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.pdb
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.dll
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.SqlServer.dll
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.Entity.dll
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\SkypeWatcher.Entity.pdb
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.xml
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\bin\Debug\EntityFramework.SqlServer.xml
+D:\github\Skype.Call.Register\SkypeWatcher\SkypeWatcher\obj\Debug\SkypeWatcher.csprojResolveAssemblyReference.cache

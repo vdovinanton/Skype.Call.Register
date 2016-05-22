@@ -56,14 +56,14 @@ namespace SkypeWatcher
                 {
                     new CallHistory
                     {
-                        Start = pcall.Timestamp,
-                        End = finishTime
+                        Start = pcall.Timestamp.ToUniversalTime(),
+                        End = finishTime.ToUniversalTime()
                     }
                 }
             };
             Console.WriteLine($"\nCall info from '{user.LoginName}':" +
-                              $"\n - Call begin: {user.CallHistory.First().Start}" +
-                              $"\n - End call: {user.CallHistory.First().End}");
+                              $"\n - Call begin: {user.CallHistory.First().Start.ToLocalTime()}" +
+                              $"\n - End call: {user.CallHistory.First().End.ToLocalTime()}");
             Console.WriteLine("\nI'm waiting for call... If your want to exit, press any key.");
             CallHandler(this, user);
         }
