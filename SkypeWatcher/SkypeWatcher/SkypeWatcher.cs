@@ -47,8 +47,7 @@ namespace SkypeWatcher
 
         private void OnCallRecived(Call pcall, TCallStatus status)
         {
-            if (status != TCallStatus.clsFinished) return;
-
+            if (status != TCallStatus.clsFinished || pcall.Type != TCallType.cltIncomingP2P) return;
             var finishTime = pcall.Timestamp + TimeSpan.FromSeconds(pcall.Duration);
             var user = new SkypeUser
             {
@@ -65,7 +64,7 @@ namespace SkypeWatcher
             Console.WriteLine($"\nCall info from '{user.LoginName}':" +
                               $"\n - Call begin: {user.CallHistory.First().Start}" +
                               $"\n - End call: {user.CallHistory.First().End}");
-            Console.WriteLine("I'm waiting for call... If your want to exit, press any key.");
+            Console.WriteLine("\nI'm waiting for call... If your want to exit, press any key.");
             CallHandler(this, user);
         }
     }
