@@ -11,4 +11,4 @@
 
 ## Some trouble with startup
 
- - If when startup you don't found **Skype4COM.dll** then run [regdll.bat](https://bitbucket.org/vdovinanton/skype.call.register/src/f999f5cb4bd59ead1cb87e819ccf73ae3cd7cecc/Dependencies/?at=master) and rebuild project
+ - If when startup you don't found **Skype4COM.dll** then run [regdll.bat](https://github.com/vdovinanton/Skype.Call.Register/tree/master/Dependencies) and rebuild project
