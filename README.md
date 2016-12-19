@@ -1,3 +1,9 @@
+![808328094-2](https://cloud.githubusercontent.com/assets/9448652/21329360/f9b5c5c8-c640-11e6-86f6-8939112fc2da.png)
+
+## About
+- App for full audition information about all incoming calls in skype and display it in the field of notification
+
+
 ## Usage manual
  - During the program, you must allow access to Skype.
 
