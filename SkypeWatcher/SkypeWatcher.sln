@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkypeWatcher", "SkypeWatcher\SkypeWatcher.csproj", "{4543EB7F-023B-4000-AAA8-B72352A72B50}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkypeWatcher.Entity", "SkypeWatcher.Entity\SkypeWatcher.Entity.csproj", "{46835A70-2CB9-42B1-84C8-A90DBD07EEF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkypeWatcher.Core", "SkypeWatcher.Core\SkypeWatcher.Core.csproj", "{A251FC77-A8F5-4FA3-AE3B-6A59E696A6AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkypeWatcher.Console", "SkypeWatcher.Console\SkypeWatcher.Console.csproj", "{4543EB7F-023B-4000-AAA8-B72352A72B50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkypeWatcher.UI", "SkypeWatcher.UI\SkypeWatcher.UI.csproj", "{A1A9163B-411C-482A-8872-475E016B3366}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46835A70-2CB9-42B1-84C8-A90DBD07EEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46835A70-2CB9-42B1-84C8-A90DBD07EEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46835A70-2CB9-42B1-84C8-A90DBD07EEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46835A70-2CB9-42B1-84C8-A90DBD07EEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A251FC77-A8F5-4FA3-AE3B-6A59E696A6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A251FC77-A8F5-4FA3-AE3B-6A59E696A6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A251FC77-A8F5-4FA3-AE3B-6A59E696A6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A251FC77-A8F5-4FA3-AE3B-6A59E696A6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4543EB7F-023B-4000-AAA8-B72352A72B50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A9163B-411C-482A-8872-475E016B3366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A9163B-411C-482A-8872-475E016B3366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A9163B-411C-482A-8872-475E016B3366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A9163B-411C-482A-8872-475E016B3366}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

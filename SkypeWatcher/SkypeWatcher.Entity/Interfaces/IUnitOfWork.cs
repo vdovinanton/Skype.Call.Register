@@ -9,9 +9,9 @@ namespace SkypeWatcher.Entity.Interfaces
     public interface IUnitOfWork : IDisposable
     {
         /// <summary>
-        /// <see cref="SkypeUser"/> context
+        /// <see cref="Person"/> context
         /// </summary>
-        ISkypeUserRepository UsersRepository { get; }
+        IPersonRepository UsersRepository { get; }
 
         /// <summary>
         /// <see cref="CallHistory"/> context

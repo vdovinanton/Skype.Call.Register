@@ -30,8 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.SKYPE4COMLib">
+      <HintPath>..\SkypeWatcher.Core\obj\Debug\Interop.SKYPE4COMLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -45,17 +54,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ICallHistoryRepository.cs" />
+    <Compile Include="Interfaces\IDialogRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Interfaces\ISkypeUserRepository.cs" />
+    <Compile Include="Interfaces\IPersonRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Models\CallHistory.cs" />
-    <Compile Include="Models\SkypeUser.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Entitys\CallHistory.cs" />
+    <Compile Include="Models\Entitys\Dialog.cs" />
+    <Compile Include="Models\Entitys\Person.cs" />
+    <Compile Include="Models\Partner.cs" />
+    <Compile Include="Models\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CallHistoryRepository.cs" />
+    <Compile Include="Repositories\DialogRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
-    <Compile Include="Repositories\SkypeUserRepository.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
     <Compile Include="SkypeCallContext.cs" />
     <Compile Include="UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

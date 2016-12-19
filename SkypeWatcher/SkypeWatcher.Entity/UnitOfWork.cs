@@ -9,12 +9,14 @@ namespace SkypeWatcher.Entity
         public UnitOfWork(SkypeCallContext context)
         {
             _context = context;
-            UsersRepository = new SkypeUserRepository(_context);
+            UsersRepository = new PersonRepository(_context);
             History = new CallHistoryRepository(_context);
+            Dialog = new DialogRepository(_context);
         }
 
-        public ISkypeUserRepository UsersRepository { get; }
+        public IPersonRepository UsersRepository { get; }
         public ICallHistoryRepository History { get; }
+        public IDialogRepository Dialog { get; set; }
         public int Complete()
         {
             return _context.SaveChanges();
